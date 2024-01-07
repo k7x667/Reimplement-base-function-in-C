@@ -1,33 +1,33 @@
 #include <stdio.h>
 
-int main()
+int calculator()
 {
-    char o;
-    double a, b;
+    char operator;
+    double nbrA, nbrB;
 
     printf("Enter an operator (+, /, -, *) ");
-    scanf("%c", &o);
+    scanf("%c", &operator);
 
     printf("Enter two operands ;");
-    scanf("%lf %lf", &a, &b);
+    scanf("%lf %lf", &nbrA, &nbrB);
 
-    switch (o)
+    switch (operator)
     {
     case '+':
-      printf("%.1lf + %.1lf = %.1lf", first, second, first + second);
+      printf("%.1lf + %.1lf = %.1lf", nbrA, nbrB, nbrA + nbrB);
       break;
     case '-':
-      printf("%.1lf - %.1lf = %.1lf", first, second, first - second);
+      printf("%.1lf - %.1lf = %.1lf", nbrA, nbrB, nbrA - nbrB);
       break;
     case '*':
-      printf("%.1lf * %.1lf = %.1lf", first, second, first * second);
+      printf("%.1lf * %.1lf = %.1lf", nbrA, nbrB, nbrA * nbrB);
       break;
     case '/':
-      printf("%.1lf / %.1lf = %.1lf", first, second, first / second);
+      printf("%.1lf / %.1lf = %.1lf", nbrA, nbrB, nbrA / nbrB);
       break;
     
     default:
-        printf('operator incorrect');
+        printf("operator incorrect");
     }
 
     return 0;
