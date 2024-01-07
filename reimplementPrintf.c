@@ -7,7 +7,7 @@ void newPrintf(const char *format, ...) {
 
     while (*format != '\0') {
         if (*format == '%') {
-            format++; // Passer le '%'
+            format++;
             switch (*format) {
                 case 'd':
                     printf("%d", va_arg(args, int));
@@ -16,10 +16,10 @@ void newPrintf(const char *format, ...) {
                     printf("%s", va_arg(args, char *));
                     break;
                 case 'c':
-                    printf("%c", va_arg(args, int)); // 'char' est promu en 'int' dans va_arg
+                    printf("%c", va_arg(args, int)); 
                     break;
                 default:
-                    putchar('%'); // Afficher le caractère '%' lui-même s'il n'est suivi d'aucun format valide
+                    putchar('%');
                     putchar(*format);
             }
         } else {
