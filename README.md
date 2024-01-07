@@ -1,4 +1,3 @@
-# This personnal project is for learning C
+# I will reimplement some basic function in **C** for learning
 
-# function reimplemented :
 ### [**printf()**](./reimplementPrintf.c)
